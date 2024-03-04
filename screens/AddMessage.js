@@ -40,7 +40,7 @@ const AddMessage = () => {
   useEffect(() => {
     const EmailAddress = async () => {
       let response = await axios.get(
-        "https://annoncement-annocer-backend.vercel.app/All",
+        "YOUR BACK-END",
         {
           params: { category: "College", value: "EASC" },
         }
