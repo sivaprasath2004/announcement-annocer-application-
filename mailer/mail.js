@@ -1,9 +1,9 @@
 import axios from "axios";
 const mail = async (props) => {
- await axios.post("https://annoncement-annocer-backend.vercel.app/mail", {
+ await axios.post("YOUR BACK-END", {
     email: props,
   });
- await axios.post("https://annoncement-annocer-backend.vercel.app/message", {
+ await axios.post("YOUR BACK-END", {
     email: {
       Image: props.Image,
       ImageHeight: props.ImageHeight,
