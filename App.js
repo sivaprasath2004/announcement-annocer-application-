@@ -27,7 +27,7 @@ const Stack = createStackNavigator();
       const id = (await AsyncStorage.getItem("Annoncement:Annoncer")) || "null";
       if (storedValue !== "null" && id !== "null") {
         try{
-        let checking=await axios.post("https://annoncement-annocer-backend.vercel.app/userChecking",{
+        let checking=await axios.post("YOUR BACK-END",{
           id:id,
         })
         if(Object.values(checking.data).length>=1)
